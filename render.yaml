@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: rick-and-morty-api
+    runtime: node
+    buildCommand: npm install --legacy-peer-deps
+    startCommand: node index.js
+    envVars:
+      - key: NODE_VERSION
+        value: 24.14.1
